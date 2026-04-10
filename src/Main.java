@@ -3,7 +3,77 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        // 1. Вызов метода printThreeWords()
+        // printThreeWords();
 
+        // 2. Вызов метода checkSumSign()
+        // checkSumSign();
+
+        // 3. Вызов метода printColor()
+        // printColor();
+
+        // 4. Вызов метода compareNumbers()
+        // compareNumbers();
+
+        /* //5. Вызов метода isSumInRange()
+         System.out.println(isSumInRange(5, 10));
+         System.out.println(isSumInRange(1, 2));*/
+
+        /* //6. Вызов метода checkNumAndPrint()
+         checkNumAndPrint(5);
+         checkNumAndPrint(-3);
+         checkNumAndPrint(0);*/
+
+        /* //7. Вызов метода isNegative()
+         System.out.println(isNegative(-5));
+         System.out.println(isNegative(3));
+         System.out.println(isNegative(0));*/
+
+        // 8. Вызов метода printStringMultipleTimes()
+        // printStringMultipleTimes("Hello", 3);
+
+        /* //9. Вызов метода isLeapYear()
+         System.out.println(isLeapYear(2020));
+         System.out.println(isLeapYear(2021));
+         System.out.println(isLeapYear(1900));
+         System.out.println(isLeapYear(2000));*/
+
+        /* //10. Вызов метода invertBinaryArray()
+         int[] invertedArray = invertBinaryArray();
+         for (int num : invertedArray) {
+             System.out.print(num + " ");
+         }
+         System.out.println();*/
+
+        /* //11. Вызов метода fillArrayWithSequence()
+         int[] sequenceArray = fillArrayWithSequence();
+         for (int num : sequenceArray) {
+             System.out.print(num + " ");
+         }
+         System.out.println();*/
+
+        /* //12. Вызов метода doubleNumbersLessThanSix()
+         int[] doubledArray = doubleNumbersLessThanSix();
+         for (int num : doubledArray) {
+             System.out.print(num + " ");
+         }
+         System.out.println();*/
+
+        /* //13. Вызов метода setDiagonalToOnes()
+         int[][] diagonalArray = setDiagonalToOnes(5);
+         for (int i = 0; i < diagonalArray.length; i++) {
+             for (int j = 0; j < diagonalArray[i].length; j++) {
+                 System.out.print(diagonalArray[i][j] + " ");
+             }
+             System.out.println();
+         }*/
+
+        /* //14. Вызов метода createArrayWithDefaultValue()
+         int[] defaultArray = createArrayWithDefaultValue(10, 7);
+         for (int num : defaultArray) {
+             System.out.print(num + " ");
+         }
+         System.out.println();*/
     }
 
     /*1. Создайте метод printThreeWords(), который при вызове должен
