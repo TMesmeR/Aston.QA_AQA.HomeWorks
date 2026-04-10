@@ -79,7 +79,7 @@ public class Main {
     Метод должен вернуть true, если число отрицательное, и вернуть false
     если положительное.Замечание: ноль считаем положительным числом.*/
     static boolean isNegative(int num) {
-        return num <0;
+        return num < 0;
     }
 
     /*8. Напишите метод, которому в качестве аргументов передается строка и число,
@@ -150,9 +150,9 @@ public class Main {
     /*14. Написать метод, принимающий на вход два аргумента: len и initialValue,
      и возвращающий одномерный массив типа int длиной len, каждая ячейка
      которого равна initialValue.*/
-    static int[] createArrayWithDefaultValue(int len, int initialValue){
+    static int[] createArrayWithDefaultValue(int len, int initialValue) {
         var array = new int[len];
-        for (int i=0;i<array.length;i++){
+        for (int i = 0; i < array.length; i++) {
             array[i] = initialValue;
         }
         return array;
