@@ -21,8 +21,8 @@ public class Main {
         }
 
         var park = new Park("", "");
-        var attration = park.new Attraction("Карусель", "10:00 - 18:00", 100.00);
-        System.out.println(attration.getName());
+        var attraction = park.new Attraction("Карусель", "10:00 - 18:00", 100.00);
+        System.out.println(attraction.getName());
     }
 }
 
