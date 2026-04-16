@@ -15,8 +15,8 @@ public class Main {
                         "LG Electronics", "Korea", 12999, true)
         };
 
-        for (var p : productArray
-        ) {
+        for (var p : productArray)
+        {
             p.printProductFullInfo();
             System.out.println("\n-///////////////////////-\n");
         }
