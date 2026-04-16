@@ -9,7 +9,7 @@ public class Park {
         this.address = address;
     }
 
-    class Attraction {
+    public class Attraction {
         private String name;
         private String workingHours;
         private double cost;
@@ -19,6 +19,9 @@ public class Park {
             this.workingHours = workingHours;
             this.cost = cost;
         }
-    }
 
+        public String getName() {
+            return name;
+        }
+    }
 }

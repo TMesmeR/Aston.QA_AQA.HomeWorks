@@ -21,7 +21,9 @@ public class Main {
             System.out.println("\n-///////////////////////-\n");
         }
 
-        var Park = new Park("", "");
+        var park = new Park("", "");
+        var attration = park.new Attraction("Карусель","10:00 - 18:00", 100.00);
+        System.out.println(attration.getName());
     }
 }
 
