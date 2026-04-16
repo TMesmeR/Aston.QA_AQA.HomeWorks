@@ -1,9 +1,7 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Park {
     private String parkName;
     private String address;
+
     public Park(String parkName, String address) {
         this.parkName = parkName;
         this.address = address;

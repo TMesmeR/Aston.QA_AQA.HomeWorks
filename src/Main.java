@@ -15,14 +15,13 @@ public class Main {
                         "LG Electronics", "Korea", 12999, true)
         };
 
-        for (var p : productArray)
-        {
+        for (var p : productArray) {
             p.printProductFullInfo();
             System.out.println("\n-///////////////////////-\n");
         }
 
         var park = new Park("", "");
-        var attration = park.new Attraction("Карусель","10:00 - 18:00", 100.00);
+        var attration = park.new Attraction("Карусель", "10:00 - 18:00", 100.00);
         System.out.println(attration.getName());
     }
 }
