@@ -1,7 +1,5 @@
 package GeoPaintShape.Shapes;
 
-import GeoPaintShape.Interface.IShape;
-
 public class Rectangle extends Shape {
     private final double sideOne;
     private final double sideTwo;

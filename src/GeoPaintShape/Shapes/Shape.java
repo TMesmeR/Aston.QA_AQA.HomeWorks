@@ -11,10 +11,12 @@ public abstract class Shape implements IShape {
         this.fillColor = fillColor;
     }
 
+    @Override
     public String getFillColor() {
         return fillColor;
     }
 
+    @Override
     public String getBorderColor() {
         return borderColor;
     }

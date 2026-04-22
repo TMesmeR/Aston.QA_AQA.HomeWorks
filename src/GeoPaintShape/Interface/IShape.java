@@ -1,12 +1,15 @@
 package GeoPaintShape.Interface;
 
 public interface IShape {
-    public double getPerimeter();
-    public  double getArea();
+    double getPerimeter();
+
+    double getArea();
 
     String getFillColor();
+
     String getBorderColor();
-    default void  printInfo(){
+
+    default void printInfo() {
         System.out.println("Фигура: " + getClass().getSimpleName());
         System.out.println("Периметр: " + String.format("%.2f", getPerimeter()));
         System.out.println("Площадь: " + String.format("%.2f", getArea()));
