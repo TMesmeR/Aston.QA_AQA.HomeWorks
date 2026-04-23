@@ -1,19 +1,37 @@
 package GeoPaintShape.Interface;
 
 public interface IShape {
-    double getPerimeter();
+    default double getPerimeter(double radius) {
+        return 2 * Math.PI * radius;
+    }
 
-    double getArea();
+    ;
+
+    default double getPerimeter(double sideA, double sideB) {
+        return 2 * (sideA + sideB);
+    }
+
+    default double getPerimeter(double sideA, double sideB, double sideC) {
+        return sideA + sideB + sideC;
+    }
+
+
+    default double getArea(double radius) {
+        return Math.PI * Math.pow(radius, 2);
+    }
+
+    default double getArea(double sideA, double sideB) {
+        return sideA * sideB;
+    }
+
+    default double getArea(double sideA, double sideB, double sideC) {
+        double s = getPerimeter(sideA, sideB, sideC) / 2;
+        return Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC));
+    }
 
     String getFillColor();
 
     String getBorderColor();
 
-    default void printInfo() {
-        System.out.println("Фигура: " + getClass().getSimpleName());
-        System.out.println("Периметр: " + String.format("%.2f", getPerimeter()));
-        System.out.println("Площадь: " + String.format("%.2f", getArea()));
-        System.out.println("Цвет заливки: " + getFillColor());
-        System.out.println("Цвет границы:" + getBorderColor());
-    }
+    void printInfo();
 }

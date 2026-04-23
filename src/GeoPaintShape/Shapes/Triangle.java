@@ -12,14 +12,13 @@ public class Triangle extends Shape {
         this.sideC = sideC;
     }
 
-    @Override
-    public double getPerimeter() {
-        return sideA + sideB + sideC;
-    }
 
     @Override
-    public double getArea() {
-        double s = getPerimeter() / 2;
-        return Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC));
+    public void printInfo() {
+        System.out.println("Фигура: " + getClass().getSimpleName());
+        System.out.println("Периметр: " + String.format("%.2f", getPerimeter(sideA,sideB,sideC)));
+        System.out.println("Площадь: " + String.format("%.2f", getArea(sideA,sideB,sideC)));
+        System.out.println("Цвет заливки: " + getFillColor());
+        System.out.println("Цвет границы:" + getBorderColor());
     }
 }

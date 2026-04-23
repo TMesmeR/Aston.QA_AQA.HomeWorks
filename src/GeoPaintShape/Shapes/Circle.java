@@ -11,12 +11,11 @@ public class Circle extends Shape{
     }
 
     @Override
-    public double getPerimeter() {
-        return 2 * Math.PI * radius;
-    }
-
-    @Override
-    public double getArea() {
-        return Math.PI * Math.pow(radius, 2);
+    public void printInfo() {
+        System.out.println("Фигура: " + getClass().getSimpleName());
+        System.out.println("Периметр: " + String.format("%.2f", getPerimeter(radius)));
+        System.out.println("Площадь: " + String.format("%.2f", getArea(radius)));
+        System.out.println("Цвет заливки: " + getFillColor());
+        System.out.println("Цвет границы:" + getBorderColor());
     }
 }

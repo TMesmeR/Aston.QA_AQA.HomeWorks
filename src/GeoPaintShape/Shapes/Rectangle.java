@@ -11,12 +11,11 @@ public class Rectangle extends Shape {
     }
 
     @Override
-    public double getPerimeter() {
-        return 2 * (sideOne + sideTwo);
-    }
-
-    @Override
-    public double getArea() {
-        return sideOne * sideTwo;
+    public void printInfo() {
+        System.out.println("Фигура: " + getClass().getSimpleName());
+        System.out.println("Периметр: " + String.format("%.2f", getPerimeter(sideOne,sideTwo)));
+        System.out.println("Площадь: " + String.format("%.2f", getArea(sideOne,sideTwo)));
+        System.out.println("Цвет заливки: " + getFillColor());
+        System.out.println("Цвет границы:" + getBorderColor());
     }
 }
