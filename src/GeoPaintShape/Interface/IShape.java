@@ -5,8 +5,6 @@ public interface IShape {
         return 2 * Math.PI * radius;
     }
 
-    ;
-
     default double getPerimeter(double sideA, double sideB) {
         return 2 * (sideA + sideB);
     }
